@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "target": "es6",
+    "lib": ["es2015", "dom"],
+    "outDir": "lib",
+    "allowSyntheticDefaultImports": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "declaration": true,
+    "jsx": "react",
+    "skipLibCheck": true,
+    "baseUrl": "dogweb/static/javascript/datadog",
+    "paths": {
+      "_production/*": ["*"]
+    }
+  },
+  "files": ["./index.ts"],
+  "include": [
+    // "dogweb/static/javascript/datadog/ui"
+  ]
+}

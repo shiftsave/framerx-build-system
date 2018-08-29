@@ -1,0 +1,10 @@
+export declare const LILAC = "#8A53C0";
+export declare const LAVENDER = "#F7F0FF";
+export declare const CARMINE = "#F2596B";
+export declare const ORANGE = "#FF9900";
+export declare const FERN = "#00CF5D";
+export declare const INK = "#262626";
+export declare const CONCRETE = "#627181";
+export declare const FLINT = "#E6E8EB";
+export declare const PEBBLE = "#F7F9FA";
+export declare const PAPER = "#FFFFFF";
