@@ -9,7 +9,7 @@
     "test": "mocha --require babel-register --colors ./test/*.spec.js",
     "test:watch": "mocha --require babel-register --colors -w ./test/*.spec.js",
     "clean": "rm -rf lib/",
-    "build": "yarn clean && webpack --env dev && webpack --env build && yarn sync:lib",
+    "build": "yarn clean && webpack --env build && yarn sync:lib",
     "sync:lib": "zip -d design-system.framerx lib/* && zip -ur design-system.framerx lib",
     "sync:src": "unzip -o design-system.framerx design/* code/* -d src/",
     "sync:framerx": "cp _base.framerx design-system.framerx && zip -ur design-system.framerx lib/* && cd src/ && zip -ur ../design-system.framerx code/* design/* && cd ..",
