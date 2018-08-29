@@ -1,7 +1,6 @@
 /* global __dirname, require, module*/
 
 const path = require("path");
-const env = require("yargs").argv.env; // use --env with webpack 2
 const { TsConfigPathsPlugin } = require("awesome-typescript-loader");
 
 const libraryName = require("./package.json").name;
@@ -34,6 +33,19 @@ const config = {
         test: /(\.tsx|\.ts)$/,
         loader: "awesome-typescript-loader",
         exclude: /(node_modules)/
+      },
+      {
+        test: /\.(c|le)ss$/,
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader" },
+          {
+            loader: "less-loader",
+            options: {
+              relativeUrls: true
+            }
+          }
+        ]
       }
     ]
   },

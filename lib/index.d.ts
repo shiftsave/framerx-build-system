@@ -1,1 +1,1 @@
-export * from "./_production";
+export { Button } from "./_production/components/Button/Button";

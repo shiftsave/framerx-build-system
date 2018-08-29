@@ -1,3 +1,1 @@
-console.info("👋🏼  System has loaded!");
-
-export * from "./_production";
+export { Button } from "./_production/components/Button/Button";

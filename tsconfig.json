@@ -12,13 +12,10 @@
     "declaration": true,
     "jsx": "react",
     "skipLibCheck": true,
-    "baseUrl": "dogweb/static/javascript/datadog",
+    "baseUrl": "./_production",
     "paths": {
       "_production/*": ["*"]
     }
   },
-  "files": ["./index.ts"],
-  "include": [
-    // "dogweb/static/javascript/datadog/ui"
-  ]
+  "files": ["./index.ts"]
 }
