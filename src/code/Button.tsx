@@ -32,8 +32,6 @@ export class Button extends React.Component<Props> {
     title: "Button",
     size: "md",
     buttonType: "default",
-    active: false,
-    type: "button",
     width: 68,
     height: 28
   };
