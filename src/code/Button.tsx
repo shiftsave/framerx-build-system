@@ -18,13 +18,10 @@ interface Props {
     | "warning"
     | "danger"
     | "toggle";
-  lockup: string;
-  isLeftLockup: boolean;
-  isRightLockup: boolean;
   size: SIZE_OPTIONS;
   title: string;
 
-  // Define the canvas size
+  // Width and height of the component when loaded in the canvas
   width: number;
   height: number;
 }
@@ -35,9 +32,6 @@ export class Button extends React.Component<Props> {
     title: "Button",
     size: "md",
     buttonType: "default",
-    isLeftLockup: false,
-    isRightLockup: false,
-    lockup: "[↔]",
     active: false,
     type: "button",
     width: 68,
@@ -60,16 +54,6 @@ export class Button extends React.Component<Props> {
   };
 
   render() {
-    const { title, lockup } = this.props;
-
-    return (
-      <_Button
-        {...this.props}
-        isLeftLockup={lockup === "→]" || (lockup === "|↔|" && true)}
-        isRightLockup={lockup === "[←" || (lockup === "|↔|" && true)}
-      >
-        {title}
-      </_Button>
-    );
+    return <_Button {...this.props}>{this.props.title}</_Button>;
   }
 }
