@@ -3,9 +3,12 @@
 
 This repository contains a build system to transpile React components into a self-contained library for use in Framer X. This was built in order to bridge the gap between the components used in design and their counterparts in production.
 
-Read more about this on our **[medium article](#)**
+### Installation
 
-# Available Commands
+1. Clone, download or fork this repository
+2. `cd framerx-library && yarn install`
+
+### Available Commands
 #### `yarn build`
 Bundles the production codebase into ES6 and copies it into the `/lib` inside Framer X contents.
 
