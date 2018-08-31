@@ -45,8 +45,6 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@types/classnames": "^2.2.6",
-    "classnames": "^2.2.6",
-    "emotion": "^9.2.8",
-    "react-emotion": "^9.2.8"
+    "classnames": "^2.2.6"
   }
 }
