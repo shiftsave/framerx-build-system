@@ -6,7 +6,7 @@ This repository contains a build system to transpile React components into a sel
 ### Installation
 
 1. Clone, download or fork this repository
-2. `cd framerx-library && yarn install`
+2. `cd framerx-build-system && yarn install`
 
 ### Available Commands
 #### `yarn build`
